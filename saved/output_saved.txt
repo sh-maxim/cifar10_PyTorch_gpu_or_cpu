@@ -1,0 +1,77 @@
+(cudapytorch) max@maxmatrix:~/main/gpu/cifar10$ ./cifar10_v1_2020.py 
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+Files already downloaded and verified
+  car horse plane truck
+[1,  2000] loss: 2.229
+[1,  4000] loss: 1.894
+[1,  6000] loss: 1.713
+[1,  8000] loss: 1.613
+[1, 10000] loss: 1.537
+[1, 12000] loss: 1.474
+[2,  2000] loss: 1.424
+[2,  4000] loss: 1.409
+[2,  6000] loss: 1.359
+[2,  8000] loss: 1.353
+[2, 10000] loss: 1.328
+[2, 12000] loss: 1.319
+Finished Training
+
+
+(cudapytorch) max@maxmatrix:~/main/gpu/cifar10$ ./cifar10_train_v1_2020.py 
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+Files already downloaded and verified
+truck  bird horse plane
+[1,  2000] loss: 2.233
+[1,  4000] loss: 1.888
+[1,  6000] loss: 1.649
+[1,  8000] loss: 1.568
+[1, 10000] loss: 1.513
+[1, 12000] loss: 1.459
+[2,  2000] loss: 1.402
+[2,  4000] loss: 1.381
+[2,  6000] loss: 1.339
+[2,  8000] loss: 1.325
+[2, 10000] loss: 1.306
+[2, 12000] loss: 1.280
+Finished Training
+
+(cudapytorch) max@maxmatrix:~/main/gpu/cifar10$ ./cifar10_gpu_train_v1_2020.py 
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+ deer truck plane  ship
+cpu
+[1,  2000] loss: 2.198
+[1,  4000] loss: 1.901
+[1,  6000] loss: 1.705
+[1,  8000] loss: 1.609
+[1, 10000] loss: 1.566
+[1, 12000] loss: 1.497
+[2,  2000] loss: 1.423
+[2,  4000] loss: 1.383
+[2,  6000] loss: 1.352
+[2,  8000] loss: 1.363
+[2, 10000] loss: 1.316
+[2, 12000] loss: 1.318
+Finished Training
+
+(cudapytorch) max@maxmatrix:~/main/gpu/cifar10$ ./cifar10_gpu_train_v1_2020.py 
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+ frog  deer horse   dog
+cuda:0
+[1,  2000] loss: 2.161
+[1,  4000] loss: 1.814
+[1,  6000] loss: 1.675
+[1,  8000] loss: 1.598
+[1, 10000] loss: 1.541
+[1, 12000] loss: 1.481
+[2,  2000] loss: 1.422
+[2,  4000] loss: 1.400
+[2,  6000] loss: 1.357
+[2,  8000] loss: 1.333
+[2, 10000] loss: 1.308
+[2, 12000] loss: 1.275
+Finished Training
+

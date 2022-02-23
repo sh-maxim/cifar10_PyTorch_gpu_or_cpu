@@ -1,0 +1,25 @@
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+plane   cat  ship plane
+[1,   125] loss: 2.241
+[1,   250] loss: 1.982
+[1,   375] loss: 1.828
+[1,   500] loss: 1.732
+[1,   625] loss: 1.684
+[1,   750] loss: 1.612
+[1,   875] loss: 1.590
+[1,  1000] loss: 1.569
+[1,  1125] loss: 1.547
+[1,  1250] loss: 1.482
+[2,   125] loss: 1.471
+[2,   250] loss: 1.459
+[2,   375] loss: 1.441
+[2,   500] loss: 1.425
+[2,   625] loss: 1.422
+[2,   750] loss: 1.390
+[2,   875] loss: 1.402
+[2,  1000] loss: 1.369
+[2,  1125] loss: 1.333
+[2,  1250] loss: 1.325
+CPU Finished Training
+1489.386 seconds passed

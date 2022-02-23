@@ -1,0 +1,17 @@
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+horse  deer   cat  ship
+[1,  2000] loss: 2.102
+[1,  4000] loss: 1.720
+[1,  6000] loss: 1.553
+[1,  8000] loss: 1.473
+[1, 10000] loss: 1.402
+[1, 12000] loss: 1.330
+[2,  2000] loss: 1.267
+[2,  4000] loss: 1.213
+[2,  6000] loss: 1.192
+[2,  8000] loss: 1.159
+[2, 10000] loss: 1.136
+[2, 12000] loss: 1.125
+CPU Finished Training
+78.398 seconds passed

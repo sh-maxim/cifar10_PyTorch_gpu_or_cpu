@@ -1,0 +1,18 @@
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+ frog  bird  deer  deer
+cuda:0
+[1,  2000] loss: 2.211
+[1,  4000] loss: 1.848
+[1,  6000] loss: 1.658
+[1,  8000] loss: 1.597
+[1, 10000] loss: 1.529
+[1, 12000] loss: 1.468
+[2,  2000] loss: 1.392
+[2,  4000] loss: 1.366
+[2,  6000] loss: 1.346
+[2,  8000] loss: 1.334
+[2, 10000] loss: 1.334
+[2, 12000] loss: 1.291
+GPU Finished Training
+59.652 seconds passed

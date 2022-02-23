@@ -1,0 +1,18 @@
+/python/anaconda3/envs/cudapytorch/bin/python
+Files already downloaded and verified
+ bird  bird plane  ship
+cuda:0
+[1,  2000] loss: 1.939
+[1,  4000] loss: 1.636
+[1,  6000] loss: 1.517
+[1,  8000] loss: 1.421
+[1, 10000] loss: 1.360
+[1, 12000] loss: 1.339
+[2,  2000] loss: 1.249
+[2,  4000] loss: 1.194
+[2,  6000] loss: 1.185
+[2,  8000] loss: 1.177
+[2, 10000] loss: 1.160
+[2, 12000] loss: 1.092
+GPU Finished Training
+73.170 seconds passed
