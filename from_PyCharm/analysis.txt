@@ -1,0 +1,43 @@
+cpu alone             600channels-4batch: 182 sec, train loss 1.156, test accuracy 60%
+cpu with gpu 1attempt 600channels-4batch: 183 sec, train loss 1.157
+cpu with gpu 2attempt 600channels-4batch: 178 sec, train loss 1.109
+
+gpu alone             600channels-4batch:  82 sec, train loss 1.105, test accuracy 60%
+gpu with cpu 1attempt 600channels-4batch:  73 sec, train loss 1.092
+gpu with cpu 2attempt 600channels-4batch:  73 sec, train loss 1.122
+
+gpu alone             6kchannels-4batch:  244 sec, train loss 1.425, test accuracy 47%
+gpu with cpu 1attempt 6kchannels-4batch:  248 sec, train loss 1.598
+...
+cpu with gpu 1attempt 6kchannels-4batch: 1947 sec, train loss 1.359
+
+gpu alone             60OnlyChls-4batch:   78 sec, train loss 1.144, test accuracy 60%
+gpu with cpu 1attempt 60OnlyChls-4batch:   63 sec, train loss 1.157
+...
+cpu with gpu 1attempt 60Only-4batch:       78 sec, train loss 1.125
+cpu alone             60Only-4batch:       78 sec, train loss 1.139, test accuracy 60%
+
+gpu alone             6AtAllChls-4batch:   78 sec, train loss 1.264, test accuracy 55%
+gpu with cpu 1attempt 6AtAllChls-4batch:   60 sec, train loss 1.291
+...
+cpu with gpu 1attempt 6AtAllChls-4batch:   66 sec, train loss 1.305
+cpu alone             6AtAllChls-4batch:   63 sec, train loss 1.272, test accuracy 53%
+
+gpu alone             6kchls-40-batch:    180 sec, train loss 1.323, test accuracy 52%
+gpu with cpu 1attempt 6kchls-40-batch:    179 sec, train loss 1.362
+...
+cpu with gpu 1attempt 6kchls-40-batch:   1489 sec, train loss 1.325
+
+gpu alone             600chls-40batch:     21 sec, train loss 1.421, test accuracy 48%
+...
+cpu with gpu          600chls-40batch:    151 sec, train loss 1.399, test accuracy 50%
+
+Conclusions:
+============
+* When the gpu load is not high, for some reason gpu training alone takes 10-15-20% (12%-24-30% more exact) longer than for gpu process running with cpu process at the same time (2 processes). For cpu it is about the same time (cpu alone or cpu with gpu). Maybe some interplay for memory movement (more efficient CPU<->GPU memory movement; or CPU more utilized more efficent movement or something; really do not know).
+* Current implemntation has no code for random seed and training path is different.
+* Accuracy changes with channels 55-60max-60max-47% for 6-60-600-6k channels.
+* Ratio of training time CPU/GPU (GPU faster by) goes 1 (rough) (when both running 1.1) - 1.15 (rough) (both running 1.24) - 2.5 - 8.
+* No difference in accuracy either CPU or GPU.
+* Batch of 40 (mistype fixed from 60 to 40) instead of 4 (mistype fixed from 6 to 4) slightly improves very bad accuracy for 6k channels from 47% to 52% but harms for 600 channels from the best 60% to 48%.
+
